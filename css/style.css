@@ -1,0 +1,15 @@
+/* CSS Styles */
+
+body{
+  background-color:rgb(242, 197, 180);
+  color:green;
+}
+
+h1{
+  color: rgb(25, 120, 250);
+}
+
+p{
+  color: rgb(250, 25, 246);
+  font-size: 30px;
+}

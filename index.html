@@ -4,11 +4,58 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     <title>My First Webpage</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
   </head>
 
   <body>
-    hello big world! Some updated text!! Added some more text!
-    Something else!
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <p>
+      hello big world! Some updated text!!<br>
+      Added some more text!<br>
+      Something else!<br>
+    </p>
+
+    <p>
+      another paragraph
+    </p>
+
+    <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">W3 Schools a tag reference</a>
+    <br>
+    <a href="page2.html">Page 2</a>
+    <br>
+    <iframe src="https://player.vimeo.com/video/6515910" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <br>
+
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wIjgZhAjQS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <audio autoplay controls loop>
+      <source src="audio/PULSAR.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <video id="mountain" loop="true" width="600" >
+      <source src="video/mountain.mp4"  type"video/mp4">
+    </video>
+    <button onclick="vidFunction()">Click to play</button>
+    <br>
+
+    <img src="images/imac.png" alt="a blue imac computer">
+    <br>
+    <img src="https://static.coindesk.com/wp-content/uploads/2013/11/computer-row.jpg" alt="row of computers" width="100">
+
+    <img src="images/sky.gif" alt="a gif of clouds moving">
   </body>
+
+  <script type="text/javascript">
+    let vid = document.getElementById("mountain");
+    function vidFunction(){
+      vid.play();
+    }
+  </script>
 
 </html>
