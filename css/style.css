@@ -1,15 +1,211 @@
 /* CSS Styles */
 
+@font-face{
+  font-family: Alien-Bold;
+  src: url(alien_encounters/Alien-Encounters-Bold.ttf) format('truetype');
+
+}
+
+@font-face{
+  font-family: Alien;
+  src: url(alien_encounters/Alien-Encounters-Regular.ttf) format('truetype');
+
+}
+
+
+html{
+
+
+  background-color: rgb(243, 219, 255);
+}
+
+#skyBG{
+  background: url(../images/sky.gif) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#furbyBG{
+  background: url(../images/furby.png);
+
+}
+
 body{
-  background-color:rgb(242, 197, 180);
-  color:green;
+  padding:0px;
+  margin: 0px;
+
 }
 
 h1{
+
+  font-size: 70px;
   color: rgb(25, 120, 250);
+  margin-top: 0px;
+  padding-top:20px;
+
 }
 
 p{
+
   color: rgb(250, 25, 246);
   font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#mainContainer{
+  width:100%;
+  height:auto;
+  position: relative;
+}
+
+#contentContainer{
+  position: relative;
+  width:800px;
+  height:auto;
+  background-color: blue;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.centeredText{
+  text-align: center;
+}
+
+.imac{
+  position: absolute;
+  left:50%;
+  top:30%;
+  display: inline-block;
+
+}
+
+.mountainVideo{
+  position: absolute;
+  left:200px;
+  top:20%;
+  display: inline-block;
+
+}
+
+.titleText{
+  position: absolute;
+  font-size: 70px;
+  color: white;
+  left:30px;
+
+}
+
+.imageRedDropShadow{
+
+  filter: drop-shadow(20px 10px 40px red);
+
+}
+
+#pg2Link{
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  top:80%;
+}
+
+.furby{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* flex box stuff */
+
+.row{
+  height: auto;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.greenDiv{
+  position: relative;
+  flex:1;
+
+  height:200px;
+  color: white;
+  background-color:green;
+}
+
+.yellowDiv{
+  position: relative;
+  flex:1;
+
+  height:200px;
+  color: white;
+  background-color: yellow;
+
+}
+
+.relativePos{
+  width:50px;
+    z-index:1;
+  height:50px;
+  left:30px;
+  top:50px;
+  position: relative;
+  background-color: orange;
+  padding:5px;
+}
+
+.absPos{
+  position: absolute;
+
+  width:80px;
+  height:80px;
+  background-color: purple;
+  left:10px;
+
+}
+
+.fixedPos{
+  position: fixed;
+  top: 40px;
+  left: 100px;
+    z-index:-1;
+
+}
+
+/* animation stuff */
+
+.animated-circle{
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  z-index:2;
+  border-radius: 50%;
+  background-color: rgb(200, 100, 40);
+  top: 200px;
+  transform: skewY(20deg);
+  animation-name: moving-circle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moving-circle{
+
+  0%{
+    left:0px;
+    background-color: rgb(200, 100, 40);
+  }
+
+  50%{
+    left:calc(100% - 200px);
+    background-color: rgb(100, 200, 40);
+  }
+
+  100%{
+    left:0px;
+    background-color: rgb(200, 100, 40);
+  }
+
 }
